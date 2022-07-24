@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./style.css" />
+      <style>
+         body {
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+         }
+         .topnav {
+         overflow: hidden;
+         background-color: rgb(101, 98, 98);
+         }
+         .topnav a {
+         float:left;
+         color: #0c0b0b;
+         text-align: center;
+         padding: 16px 16px;
+         text-decoration: none;
+         height: 20px;
+         }
+         .topnav a:hover {
+         background-color: #ddd;
+         color: rgb(10, 10, 10);
+         }
+         .topnav a.active {
+         background-color: #202b27;
+         color: rgb(247, 236, 236);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="topnav">
+         <div style="margin-left:9%;margin-right: 10%;">
+            <a style="width: 170px;padding:0px" class="lo"> <img src="data:image/jpeg;base64,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" style="width:51%;height: 51px;"></a>
+         </div>
+         <div>
+            <a class="active" href="#home">Home</a>
+            <a href="./contact.html">Contact Us </a>
+            <a href="#about">Services </a>
+         </div>
+         <div style="float:right;margin-right: 20%;">
+            <a class="sign" > Register </a>
+            <a class="in">Log In</a>
+         </div>
+      </div>
+      </head>
+      <body>
+         <header>
+            <div style="position: relative;
+               text-align: center;">
+               <img style="    width: 90%;height: 350px;" src="https://www.alwatan.com.sa/uploads/images/2021/08/25/703816.jpg">
+               <h1 style="position: absolute;
+                  bottom: 250px;
+                  left: 200px;">Pet Oasis for all the pet needs
+                  Healthy & Useful Productions
+               </h1>
+               <h2 style="position: absolute;
+                  bottom: 200px;
+                  left: 200px;">Pet Oasis for all the pet needs</h2>
+            </div>
+         </header>
+         <main>
+            <div style="  text-align: center;height: 100px">
+               <h2>Categories</h2>
+            </div>
+            <div   style="text-align: center;    height: 500px">
+               <div style="       width: 33%;
+                  float: left;">
+                  <div style="padding: 30px;">
+                     <img style="    width: 100%;height: 350px;" src="https://image.shutterstock.com/image-photo/pet-food-toys-accessories-on-260nw-1364257343.jpg"> 
+                     <h4>Animal Supplies</h4>
+                  </div>
+               </div>
+               <div style="     width: 33%;
+                  float: left;">
+                  <div style="padding: 30px;">
+                     <img style="    width: 100%;height: 350px;" src="https://www.annahar.com/ContentFilesArchive/100488Image1-1180x677_d.jpg?version=3796288">
+                     <h4>Dog</h4>
+                  </div>
+               </div>
+               <div style="     width: 33%;
+                  float: left; ">
+                  <div style="padding: 30px;">
+                     <img style="    width: 100%;height: 350px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQIDnydkpuJvQtwUwbC4_rLtFjLxUKAKo9A&usqp=CAU">
+                     <h4>Cat</h4>
+                  </div>
+               </div>
+            </div>
+            <div style="position: relative;
+               text-align: center;">
+               <img style="    width: 90%;height: 350px;" src="https://www.topsarabia.com/wp-content/uploads/2022/04/%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D8%A7%D8%AA-%D8%A3%D9%84%D9%8A%D9%81%D8%A9.jpg">
+               <h1 style="position: absolute;
+                  bottom: 200px;
+                  left: 188px;">Pet Oasis for all the pet needs
+                  Healthy & Useful Productions
+               </h1>
+            </div>
+            <div style="
+               text-align: center;height: 500px;width:100%">
+               <div style="       width: 50%;
+                  float: left;">
+                  <div style="padding: 30px;">   <img style="    width: 100%;height: 350px;" src="https://images.ctfassets.net/440y9b545yd9/4ZP0InpIOw3MPh2NFW9jM4/09f008f8c5608c7587effffbcf03e655/shutterstock_752719666__1_.jpg"></div>
+               </div>
+               <div style="       width: 50%;
+                  float: left;">
+                  <div style="margin-top: 90px;">
+                     <h2>Genuine Turkish Angora cat 5 months old for sale, her blood is light and grainy, original breed, loves to play, top in vitality and activity, trained on 3 different games</h2>
+                     <h3>Seller Information</h3>
+                     <h4>Amjad Alabadi</h4>
+                     <h4>0795248550</h4>
+                  </div>
+               </div>
+            </div>
+            <div style="
+               text-align: center;height: 500px;width:100%">
+               <div style="       width: 50%;
+                  float: left;">
+                  <div style="margin-top: 90px;">
+                     <h2>50 day old griffon puppy worms and insects restaurant</h2>
+                     <h3>Seller Information</h3>
+                     <h4>sameera Ameer</h4>
+                     <h4>0785426225</h4>
+                  </div>
+               </div>
+               <div style="       width: 50%;
+                  float: left;">
+                  <div style="padding: 30px;">   <img style="    width: 100%;height: 350px;" src="https://static.scientificamerican.com/arabic/cache/file/99B22E6D-99FD-43E5-9FE261BCB356475A.jpg"></div>
+               </div>
+            </div>
+            
+            
+                  <div style="
+                  text-align: center;height: 500px;width:100%">
+                  <div style="       width: 50%;
+                     float: left;">
+                     <div style="margin-top: 90px;">
+                        <h2>Good place for those looking for pet supplies and treats</h2>
+                        
+                     </div>
+                     
+                          
+
+         </main>
+         <footer style="width:100%">&copy; 2022</footer>
+   </body>
+</html>
+--
